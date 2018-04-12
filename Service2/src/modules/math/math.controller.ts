@@ -17,8 +17,7 @@ export class MathController {
     @Get()
     get(): Observable<number> {
         const pattern = { cmd: 'sum' };
-        const data = [1, 2, 3, 4, 5, 123, 15125, 1265126];
-        // return Observable.of(54);
+        const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         return this.client.send<number>(pattern, data);
     
     }
