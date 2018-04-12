@@ -1,0 +1,14 @@
+version: '3'
+services:
+  redis:
+    build: containers/redis/
+    ports:
+      - "6379:6379"
+  # rabbit:
+  #   image: rabbitmq:3-management
+  #   environment:
+  #     - RABBITMQ_DEFAULT_USER=user
+  #     - RABBITMQ_DEFAULT_PASS=abc123
+  #   ports:
+  #     - "15672:15672"
+  #     - "5672:5672"
