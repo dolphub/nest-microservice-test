@@ -31,3 +31,6 @@ Open your browser and navigate to the Serivce 2's api `math` api i.e, `http://lo
 
 ###### With Curl
 Using curl you can test the api and microservice communication with `curl http://localhost:3000/math`
+
+## Interesting Finds...
+It seems when you spin up service1 and service2, both listening on the same pattern, whichever one was connected first is the one that publishes first... but having both services up doesn't mutate the data in any way, just an implicit understanding of which service is actually responding.

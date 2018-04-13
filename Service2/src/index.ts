@@ -7,5 +7,6 @@ const PORT = parseInt(process.env.PORT, 10) || 3000;
 async function bootstrap() {
   const app = await NestFactory.create(ApplicationModule);
   await app.listen(PORT);
+  console.log('Webserver Started on port:', PORT);
 }
 bootstrap();

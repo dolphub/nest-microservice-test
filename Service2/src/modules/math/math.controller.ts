@@ -18,6 +18,7 @@ export class MathController {
     get(): Observable<number> {
         const pattern = { cmd: 'sum' };
         const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        console.log('Requesting data to be summed:', data);
         return this.client.send<number>(pattern, data);
     
     }

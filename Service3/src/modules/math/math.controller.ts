@@ -7,7 +7,7 @@ export class MathController {
 
     @MessagePattern({ cmd: 'sum' })
     getAll(data: number[]): number {
-        console.log('Service1::MessagePattern: { cmd: sum }:', data);
-        return (data || []).reduce((a, b) => a + b);
+        console.log('Service3::MessagePattern: { cmd: sum }:', data);
+        return (data || []).reduce((a, b) => a + b) + 50;
     }
 }
